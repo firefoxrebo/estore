@@ -1,0 +1,1172 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles: Mohammed Yehia Abdul Mottalib
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'NeoSansArabic';
+    src: url('fonts/NeoSansArabic.eot?') format('eot'),
+    url('fonts/NeoSansArabic.woff') format('woff'),
+    url('fonts/NeoSansArabic.ttf')  format('truetype'),
+    url('fonts/NeoSansArabic.svg#NeoSansArabic') format('svg');
+}
+
+@font-face {font-family: "Neo Sans Arabic Bold";
+    src: url("fonts/8748f5068427fc51038324b33a9a85dd.eot"); /* IE9*/
+    src: url("fonts/8748f5068427fc51038324b33a9a85dd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/8748f5068427fc51038324b33a9a85dd.woff2") format("woff2"), /* chrome、firefox */
+    url("fonts/8748f5068427fc51038324b33a9a85dd.woff") format("woff"), /* chrome、firefox */
+    url("fonts/8748f5068427fc51038324b33a9a85dd.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/8748f5068427fc51038324b33a9a85dd.svg#Neo Sans Arabic Bold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Neo Sans Arabic Medium";
+    src: url("fonts/7668f634eb4865a48f04d52ea3fb9b27.eot"); /* IE9*/
+    src: url("fonts/7668f634eb4865a48f04d52ea3fb9b27.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/7668f634eb4865a48f04d52ea3fb9b27.woff2") format("woff2"), /* chrome、firefox */
+    url("fonts/7668f634eb4865a48f04d52ea3fb9b27.woff") format("woff"), /* chrome、firefox */
+    url("fonts/7668f634eb4865a48f04d52ea3fb9b27.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/7668f634eb4865a48f04d52ea3fb9b27.svg#Neo Sans Arabic Medium") format("svg"); /* iOS 4.1- */
+}
+
+body {
+    background: #e9ecef;
+    direction: rtl !important;
+    height: 100%;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, pre,
+ul, ol, li, a, img, div, form, input,
+input, textarea, table, tr, th, td, nav,
+footer, header, hgroup, menu, figure, figcaption, time, meter {
+    margin:0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, input, select,
+textarea, legend, label, th, td, blockquote, q, span, div {
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: 'NeoSansArabic' !important;
+    color: #666;
+}
+
+p {
+    line-height: 1.5;
+}
+
+div.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+div.wrapper header.main {
+    height: 45px;
+    background: #408eba;
+    border-top: 1px solid #408eba;
+}
+
+div.wrapper header.main div.user_menu_container {
+    position: relative;
+}
+
+div.wrapper header.main div.user_menu_container ul.user_menu {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+    box-sizing: border-box;
+    background: #FFF;
+    list-style: none;
+    box-shadow: 0 1px 5px 0 rgba(56,61,72,0.21);
+    width: 140px;
+    display: none;
+}
+
+div.wrapper header.main div.user_menu_container ul.user_menu::before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    content: 'arrow_drop_up';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    color: #FFF;
+}
+
+div.wrapper header.main div.user_menu_container ul.user_menu li a:link,
+div.wrapper header.main div.user_menu_container ul.user_menu li a:visited {
+    color: #666;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: solid 1px #EFEFEF;
+}
+
+div.wrapper header.main div.user_menu_container ul.user_menu li a:hover,
+div.wrapper header.main div.user_menu_container ul.user_menu li a:active {
+    background: #f3f5f6;
+}
+
+div.wrapper header.main div.user_menu_container ul.user_menu li:last-child a {
+    border: none;
+}
+
+div.wrapper header.main div.user_menu_container ul.user_menu li a i {
+    margin-left: 10px;
+}
+
+div.wrapper header.main a.menu_switch:link,
+div.wrapper header.main a.menu_switch:visited {
+    color: #FFF;
+    font-size: 1.5em;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    text-align: center;
+    float: right;
+    transition: all 0.3s ease-in-out;
+}
+
+div.wrapper header.main a.menu_switch.opened {
+    transform: rotate(90deg);
+}
+
+div.wrapper header.main a.language_switch:link,
+div.wrapper header.main a.language_switch:visited {
+    color: #FFF;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: block;
+    height: 25px;
+    margin: 10px 5px;
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+
+div.wrapper header.main a.language_switch > i {
+    font-size: 1.1em;
+    float: left;
+    margin-right: 5px;
+}
+
+div.wrapper header.main a.language_switch > span {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-top: 2px;
+    color: #FFF;
+}
+
+div.wrapper header.main a.menu_switch.opened.no_animation {
+    transition: none !important;
+}
+
+div.wrapper header.main h1 {
+    color: #FFF;
+    margin: 13px 0 13px 13px;
+    font-size: 1.2em;
+    float: right;
+}
+
+div.wrapper nav.main_navigation {
+    width: 250px;
+    padding: 20px 0;
+    background: #222d32;
+    position: absolute;
+    top: 46px;
+    right: -250px;
+    transition: all 0.3s ease-in-out;
+    height: calc(100% - 86px);
+}
+
+div.wrapper nav.main_navigation.opened {
+    right: 0;
+}
+
+div.wrapper nav.main_navigation.opened.no_animation {
+    transition: none !important;
+}
+
+div.wrapper nav.main_navigation div.profile_picture {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    border: solid 5px #FFF;
+    margin: 20px auto;
+}
+
+div.wrapper nav.main_navigation div.employee_info span.name,
+div.wrapper nav.main_navigation div.employee_info span.privilege {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    color: #FFF;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+div.wrapper nav.main_navigation div.employee_info span.name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+div.wrapper nav.main_navigation div.employee_info span.privilege {
+    margin: 0 auto;
+    color: #408eba;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation {
+    margin: 20px 0;
+    list-style: none;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li:first-child a {
+    border-top: solid 1px #273339;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li a:link,
+div.wrapper nav.main_navigation ul.app_navigation li a:visited {
+    color: #b8c7ce;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background: #222d32;
+    transition: all 0.3s ease-in-out;
+    border-bottom: solid 1px #273339;
+    box-sizing: border-box;
+    border-right: solid 5px transparent;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li a:hover,
+div.wrapper nav.main_navigation ul.app_navigation li a:active {
+    background: #222;
+    color: #b8c7ce;
+    border-right: solid 5px #408eba;
+}
+
+div.wrapper div.action_view {
+    padding: 20px;
+    background: #FFF;
+    transition: all 0.3s ease-in-out;
+    min-height: calc(100% - 86px);
+}
+
+div.wrapper div.action_view.collapsed {
+    margin-right: 250px;
+}
+
+div.wrapper div.action_view.collapsed.no_animation {
+    transition: none !important;
+}
+
+div.wrapper div.action_view form.appForm {
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.wrapper div.action_view form.appForm fieldset {
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: solid 1px #e4e4e4;
+}
+
+div.wrapper div.action_view form.appForm fieldset legend {
+    padding: 5px 10px;
+    color: #FFF;
+    background: #408eba;
+    line-height: 1.5;
+}
+
+div.wrapper div.action_view form.appForm.n10 {
+    width: 10%;
+}
+div.wrapper div.action_view form.appForm.n20 {
+    width: 20%;
+}
+div.wrapper div.action_view form.appForm.n30 {
+    width: 30%;
+}
+div.wrapper div.action_view form.appForm.n40 {
+    width: 40%;
+}
+div.wrapper div.action_view form.appForm.n50 {
+    width: 50%;
+}
+div.wrapper div.action_view form.appForm.n60 {
+    width: 60%;
+}
+div.wrapper div.action_view form.appForm.n70 {
+    width: 70%;
+}
+div.wrapper div.action_view form.appForm.n80 {
+    width: 80%;
+}
+div.wrapper div.action_view form.appForm.n90 {
+    width: 90%;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper {
+    width: 100%;
+    position: relative;
+    height: 55px;
+    clear: both;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper.n10,
+div.wrapper div.action_view form.appForm div.input_wrapper.n20,
+div.wrapper div.action_view form.appForm div.input_wrapper.n30,
+div.wrapper div.action_view form.appForm div.input_wrapper.n40,
+div.wrapper div.action_view form.appForm div.input_wrapper.n50,
+div.wrapper div.action_view form.appForm div.input_wrapper.n60,
+div.wrapper div.action_view form.appForm div.input_wrapper.n70,
+div.wrapper div.action_view form.appForm div.input_wrapper.n80,
+div.wrapper div.action_view form.appForm div.input_wrapper.n90 {
+    float: right;
+    clear: none;
+    box-sizing: border-box;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper.n10 {
+    width: 10%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n20 {
+    width: 20%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n30 {
+    width: 30%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n40 {
+    width: 40%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n50 {
+    width: 50%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n60 {
+    width: 60%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n70 {
+    width: 70%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n80 {
+    width: 80%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper.n90 {
+    width: 90%;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper.border {
+    border-left: solid 1px #e4e4e4;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other {
+    width: 100%;
+    position: relative;
+    min-height: 55px;
+    clear: both;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px #e4e4e4;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n10,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n20,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n30,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n40,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n50,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n60,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n70,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n80,
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n90 {
+    float: right;
+    clear: none;
+    box-sizing: border-box;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n10 {
+    width: 10%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n20 {
+    width: 20%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n30 {
+    width: 30%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n40 {
+    width: 40%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n50 {
+    width: 50%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n60 {
+    width: 60%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n70 {
+    width: 70%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n80 {
+    width: 80%;
+}
+div.wrapper div.action_view form.appForm div.input_wrapper_other.n90 {
+    width: 90%;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other.border {
+    border-left: solid 1px #e4e4e4;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.radio,
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox {
+    margin-left: 10px;
+    height: 20px;
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 0.85em;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label:first-child {
+    display: block;
+    margin: 7px 0;
+    font-size: 0.85em;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.radio div.radio_button,
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox div.checkbox_button {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    background: #e4e4e4;
+    float: right;
+    margin-left: 5px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.radio.block,
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox.block {
+    display: block;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox div.checkbox_button {
+    border-radius: 0px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.radio:hover div.radio_button,
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox:hover div.checkbox_button {
+    background: #ccc;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.radio input[type=radio]:checked + div.radio_button,
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox input[type=checkbox]:checked + div.checkbox_button {
+    background: #408eba;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox input[type=checkbox]:checked + div.checkbox_button::after {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f00c';
+    color: #FFF;
+    font-size: 0.9em;
+    margin: 1px;
+    text-align: center;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.radio input[type=radio],
+div.wrapper div.action_view form.appForm div.input_wrapper_other label.checkbox input[type=checkbox] {
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other.select {
+    position: relative;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other select {
+    background: #f7f7f7;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0;
+    border: solid 1px #f7f7f7;
+    padding: 5px 15px;
+    line-height: 1.7;
+    display: block;
+    margin-top: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other select:focus {
+    outline: none;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other.select::after {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    content: 'keyboard_arrow_down';
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other textarea {
+    background: #f7f7f7;
+    box-sizing: border-box;
+    width: 100%;
+    border: solid 1px #f7f7f7;
+    display: block;
+    margin: 8px 0;
+    padding: 20px;
+    font-size: 0.85em;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper label {
+    position: absolute;
+    font-size: 0.9em;
+    bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper label.floated {
+    bottom: 30px;
+    font-size: 0.75em;
+    color: #408eba;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper_other.padding {
+    padding-right: 10px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper.padding label {
+    right: 10px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper input {
+    width: 100%;
+    height: 30px;
+    border-bottom: solid 1px #e4e4e4;
+    position: absolute;
+    background: transparent;
+    font-size: 1em;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    color: #222;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper.padding input {
+    padding: 0 10px;
+}
+
+div.wrapper div.action_view form.appForm input[type=submit] {
+    width: 80px;
+    font-size: 1em;
+    color: #FFF;
+    padding: 5px;
+    line-height: 1.5;
+    background: #408eba;
+    margin: 10px 0;
+    float: left;
+    clear: both;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    border: solid 1px transparent;
+}
+
+div.wrapper div.action_view form.appForm input[type=submit]:hover,
+div.wrapper div.action_view form.appForm input[type=submit]:active,
+div.wrapper div.action_view form.appForm input[type=submit]:focus {
+    background: #FFF;
+    color: #408eba;
+    border: solid 1px #408eba;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper input:focus {
+    background: none !important;
+    border-bottom: solid 2px #408eba;
+}
+
+p.message {
+    font-size: 0.95em;
+    background: #68ab68;
+    color: #FFF;
+    padding: 5px 10px;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    border-radius: 3px;
+}
+
+a.button:link, a.button:visited {
+    display: inline-block;
+    float: left;
+    background: #408eba;
+    color: #FFF;
+    border-radius: 2px;
+    padding: 10px 10px 7px 10px;
+    font-size: 0.8em;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+}
+
+table.data {
+    width: 100%;
+    clear: both;
+}
+
+table.data tr:hover td:nth-child(odd),
+table.data tr:hover td.odd,
+table.data tr:hover td {
+    background: rgba(64, 142, 186, 0.18) !important;
+    color: #666 !important;
+}
+
+table.data tr:hover td a:link,
+table.data tr:hover td a:visited {
+    color: #666 !important;
+}
+
+table.data tr:first-child {
+    border-bottom: solid 1px #EFEFEF;
+}
+
+table.data tr th {
+    font-size: 0.85em;
+    font-weight: bold;
+    padding: 5px 10px 10px 0px;
+    border-left: solid 1px #EFEFEF;
+    text-align: right;
+    border-bottom: solid 3px #e0e0e0;
+}
+
+table.data tr th:last-child {
+    text-align: center;
+    border-left: none;
+}
+
+table.data tr td {
+    font-size: 0.85em;
+    padding: 8px 10px 8px 5px;
+    text-align: right;
+    border-bottom: solid 1px #EFEFEF;
+}
+
+table.data tr td:last-child {
+    text-align: center;
+}
+
+div.statTable.report table tr td:last-child,
+div.statTable.report table tr th:last-child {
+    text-align: right;
+}
+
+table.data tr:nth-child(odd) {
+    background: #f3f5f6;
+}
+
+table.data tr.odd {
+    background: #f3f5f6 !important;
+}
+
+table.data tr:first-child {
+    background: transparent;
+}
+
+table.data tr td a.linethrough {
+    text-decoration: line-through;
+}
+
+table.data tr td:last-child a {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1.1em;
+}
+
+table.data tbody tr:only-child td[colspan] {
+    text-align: right;
+}
+
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting {
+    cursor: pointer;
+    *cursor: hand;
+}
+table.dataTable thead .sorting {
+    background: url("/img/sort_both.png") no-repeat center left;
+}
+table.dataTable thead .sorting_asc {
+    background: url("/img/sort_asc.png") no-repeat left 2px;
+}
+table.dataTable thead .sorting_desc {
+    background: url("/img/sort_desc.png") no-repeat left -5px;
+}
+table.dataTable thead .sorting_asc_disabled {
+    background: url("/img/sort_asc_disabled.png") no-repeat center left;
+}
+table.dataTable thead .sorting_desc_disabled {
+    background: url("/img/sort_desc_disabled.png") no-repeat center left;
+}
+
+
+
+/*
+ * Control feature layout
+ */
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    *zoom: 1;
+    zoom: 1;
+}
+.dataTables_wrapper .dataTables_length {
+    float: left;
+    margin: 0 0 25px 10px;
+}
+.dataTables_wrapper .dataTables_length label,
+.dataTables_wrapper .dataTables_filter label {
+    font-size: 0.8em;
+}
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+    margin: 0 5px 25px 0;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-right: 0.5em;
+    border-radius: 2px;
+    border: solid 1px #EFEFEF;
+    padding: 3px;
+    width: 350px;
+}
+.dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+    padding-top: 0.755em;
+    margin: 5px 0 0 0;
+    font-size: 0.85em;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 0.25em;
+    margin: 5px 0 0 0;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-left: 2px;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    *cursor: hand;
+    border: 1px solid transparent;
+    font-size: 0.85em;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #333333 !important;
+    border: 1px solid #cacaca;
+    background-color: #EFEFEF;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: default;
+    color: #ccc !important;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    background-color: #585858;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    outline: none;
+    background-color: #2b2b2b;
+    /* W3C */
+    box-shadow: inset 0 0 3px #111;
+}
+.dataTables_wrapper .dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 40px;
+    margin-left: -50%;
+    margin-top: -25px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    /* IE10+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    /* Opera 11.10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: #666;
+    font-family: 'NeoSansArabic' !important;
+}
+.dataTables_wrapper .dataTables_scroll {
+    clear: both;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
+    *margin-top: -1px;
+    -webkit-overflow-scrolling: touch;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody th > div.dataTables_sizing,
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody td > div.dataTables_sizing {
+    height: 0;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 1px solid #111111;
+}
+.dataTables_wrapper.no-footer div.dataTables_scrollHead table,
+.dataTables_wrapper.no-footer div.dataTables_scrollBody table {
+    border-bottom: none;
+}
+.dataTables_wrapper:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+table.dataTable tr td:first-child a i {
+    display: inline-block;
+    margin: 0 0 0 5px;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media only screen
+and (max-width: 640px)
+and (orientation: landscape) {
+    div.input_wrapper, div.input_wrapper_other {
+        width: 100% !important;
+        border-left: none !important;
+        padding: 0 !important;
+    }
+
+    div.wrapper div.action_view form.appForm div.input_wrapper.padding input {
+        padding: 0 !important;
+    }
+
+    div.wrapper div.action_view form.appForm div.input_wrapper.padding label {
+        right: 0;
+    }
+}
