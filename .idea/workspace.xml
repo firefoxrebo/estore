@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b49fe11d-e0bd-4ad7-a3c0-1ca52c9fac04" name="Default" comment="some changes in workspace.xml">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.php" afterPath="$PROJECT_DIR$/app/config/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/indexcontroller.php" afterPath="$PROJECT_DIR$/app/controllers/indexcontroller.php" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -211,11 +210,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500160297473</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added sessoion configuration">
+      <created>1500160358591</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1500160358591</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="832000" />
+    <option name="totallyTimeSpent" value="876000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -268,7 +274,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some changes in workspace.xml" />
     <MESSAGE value="Added SessionManager Class to the library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SessionManager Class to the library" />
+    <MESSAGE value="Added sessoion configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sessoion configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

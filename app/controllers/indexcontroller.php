@@ -9,5 +9,4 @@ class IndexController extends AbstractController
         $this->_language->load('index.default');
         $this->_view();
     }
-
 }
