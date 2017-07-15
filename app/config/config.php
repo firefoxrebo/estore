@@ -23,7 +23,3 @@ defined('DATABASE_CONN_DRIVER')     ? null : define ('DATABASE_CONN_DRIVER', 1);
 // Default application language
 defined('APP_DEFAULT_LANGUAGE')     ? null : define ('APP_DEFAULT_LANGUAGE', 'ar');
 
-// Session Information
-define('SESSION_NAME', '_STORE_SESSION');
-define('SESSION_LIFE_TIME', 0);
-define('SESSION_SAVE_PATH', APP_PATH . DS . '..' . DS . 'sessions');
