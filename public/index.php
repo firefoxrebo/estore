@@ -5,6 +5,8 @@ use PHPMVC\LIB\FrontController;
 use PHPMVC\LIB\Language;
 use PHPMVC\LIB\Template;
 
+session_start();
+
 if(!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
 }
@@ -20,5 +22,6 @@ $template_parts = require_once '..' . DS . 'app' . DS . 'config' . DS . 'templat
 
 $template = new Template($template_parts);
 $language = new Language();
+
 $frontController = new FrontController($template, $language);
 $frontController->dispatch();
