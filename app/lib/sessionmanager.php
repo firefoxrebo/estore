@@ -9,7 +9,7 @@ class SessionManager extends \SessionHandler
     private $sessionSSL = false;
     private $sessionHTTPOnly = true;
     private $sessionPath = '/';
-    private $sessionDomain = 'takafol';
+    private $sessionDomain = '.mvcapp.com';
     private $sessionSavePath = SESSION_SAVE_PATH;
 
     private $sessionCipherAlgo = MCRYPT_BLOWFISH;

@@ -2,9 +2,11 @@
 namespace PHPMVC;
 use PHPMVC\LIB\FrontController;
 use PHPMVC\LIB\Language;
+use PHPMVC\LIB\SessionManager;
 use PHPMVC\LIB\Template;
 
-session_start();
+$session = new SessionManager();
+$session->start();
 
 if(!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
