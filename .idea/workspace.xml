@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b49fe11d-e0bd-4ad7-a3c0-1ca52c9fac04" name="Default" comment="some changes in workspace.xml">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/sessionmanager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.php" afterPath="$PROJECT_DIR$/app/config/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/indexcontroller.php" afterPath="$PROJECT_DIR$/app/controllers/indexcontroller.php" />
@@ -205,11 +204,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500159491198</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added SessionManager Class to the library">
+      <created>1500160297473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1500160297473</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="771000" />
+    <option name="totallyTimeSpent" value="832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -261,7 +267,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some changes in workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changes in workspace.xml" />
+    <MESSAGE value="Added SessionManager Class to the library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SessionManager Class to the library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
