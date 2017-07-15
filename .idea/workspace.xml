@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b49fe11d-e0bd-4ad7-a3c0-1ca52c9fac04" name="Default" comment="Added a call to index.default language file">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/templateheaderstart.php" afterPath="$PROJECT_DIR$/app/template/templateheaderstart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+    <list default="true" id="b49fe11d-e0bd-4ad7-a3c0-1ca52c9fac04" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
-    <ignored path="mvc.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -37,112 +28,16 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>localhost</find>
-      <find>opened</find>
-      <find>collapsed</find>
-      <find>input_wrapper</find>
-      <find>radio_bu</find>
-      <find>radio_button</find>
-      <find>act</find>
-      <find>label.f</find>
-      <find>بحث</find>
-      <find>floated</find>
-      <find>language</find>
-      <find>div.wrapper nav.main_navigation {</find>
-      <find>4E6FB8</find>
-      <find>305</find>
-      <find>4e6</find>
-      <find>calc</find>
-      <find>table</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/app/template/templateheader.php" />
-        <option value="$PROJECT_DIR$/app/template/wrapperend.php" />
-        <option value="$PROJECT_DIR$/app/template/templateheaderend.php" />
-        <option value="$PROJECT_DIR$/app/template/wrapperstart.php" />
-        <option value="$PROJECT_DIR$/app/views/index/default.view.php" />
-        <option value="$PROJECT_DIR$/app/config.php" />
-        <option value="$PROJECT_DIR$/app/template/templatefooter.php" />
-        <option value="$PROJECT_DIR$/app/lib/Template.php" />
-        <option value="$PROJECT_DIR$/public/js/datatables.js" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/app/lib/frontcontroller.php" />
-        <option value="$PROJECT_DIR$/app/controllers/abstractcontroller.php" />
-        <option value="$PROJECT_DIR$/app/views/employee/default.view.php" />
-        <option value="$PROJECT_DIR$/app/languages/ar/employee/default.lang.php" />
-        <option value="$PROJECT_DIR$/app/languages/en/employee/default.lang.php" />
-        <option value="$PROJECT_DIR$/app/controllers/languagecontroller.php" />
-        <option value="$PROJECT_DIR$/public/js/datatablesen.js" />
-        <option value="$PROJECT_DIR$/app/languages/en/employee/add.lang.php" />
-        <option value="$PROJECT_DIR$/app/views/employee/add.view.php" />
-        <option value="$PROJECT_DIR$/app/languages/en/employee/labels.lang.php" />
-        <option value="$PROJECT_DIR$/app/languages/en/employee/edit.lang.php" />
-        <option value="$PROJECT_DIR$/app/lib/language.php" />
-        <option value="$PROJECT_DIR$/public/css/mainar.scss" />
-        <option value="$PROJECT_DIR$/app/config/templateconfig.php" />
-        <option value="$PROJECT_DIR$/app/languages/ar/employee/add.lang.php" />
-        <option value="$PROJECT_DIR$/app/languages/ar/employee/edit.lang.php" />
-        <option value="$PROJECT_DIR$/app/languages/ar/employee/labels.lang.php" />
-        <option value="$PROJECT_DIR$/public/css/msinar.css" />
-        <option value="$PROJECT_DIR$/public/css/msinen.css" />
-        <option value="$PROJECT_DIR$/app/template/nav.php" />
-        <option value="$PROJECT_DIR$/app/lib/database/databasehandler.php" />
-        <option value="$PROJECT_DIR$/app/models/employeemodel.php" />
-        <option value="$PROJECT_DIR$/app/controllers/employeecontroller.php" />
-        <option value="$PROJECT_DIR$/app/models/abstractmodel.php" />
-        <option value="$PROJECT_DIR$/app/lib/database/pdodatabasehandler.php" />
-        <option value="$PROJECT_DIR$/app/views/employee/edit.view.php" />
-        <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/app/languages/en/template/common.lang.php" />
-        <option value="$PROJECT_DIR$/app/template/header.php" />
-        <option value="$PROJECT_DIR$/public/css/mainar.css" />
-        <option value="$PROJECT_DIR$/public/css/mainen.css" />
-        <option value="$PROJECT_DIR$/app/languages/ar/template/common.lang.php" />
-        <option value="$PROJECT_DIR$/app/lib/autoload.php" />
-        <option value="$PROJECT_DIR$/app/lib/sessionmanager.php" />
-        <option value="$PROJECT_DIR$/app/config/config.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/template/templateheaderstart.php" />
-        <option value="$PROJECT_DIR$/app/controllers/indexcontroller.php" />
-        <option value="$PROJECT_DIR$/app/languages/ar/index/default.lang.php" />
-        <option value="$PROJECT_DIR$/app/languages/en/index/default.lang.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="10000" break_at_first_line="true" />
   <component name="PhpServers">
-    <servers>
-      <server host="www.mvcapp.dev" id="81e24588-f2a8-4ef1-8e34-dbdff33fd7f2" name="MVC" />
-      <server host="mvcapp.dev" id="f914611d-acca-4335-97f6-2b4c5356600e" name="mvcapp.dev" />
-    </servers>
+    <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5">
-    <include_path>
-      <path value="." />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
@@ -212,27 +107,6 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="last_opened_file_path" value="/usr/local/php5-7.0.0-20151202-133632/bin" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/config" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/languages/en" />
-      <recent name="$PROJECT_DIR$/app/lib" />
-      <recent name="$PROJECT_DIR$/app/languages/ar/employee" />
-      <recent name="$PROJECT_DIR$/app/languages/en/employee" />
-      <recent name="$PROJECT_DIR$/public/js" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -245,183 +119,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Web Application.RUN &amp; DEBUG">
-    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="false" name="RUN &amp; DEBUG" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="MVC">
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.RUN &amp; DEBUG" />
-    </list>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="b49fe11d-e0bd-4ad7-a3c0-1ca52c9fac04" name="Default" comment="" />
-      <created>1470274311318</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1470274311318</updated>
-      <workItem from="1470274315735" duration="5532000" />
-      <workItem from="1470290044330" duration="3672000" />
-      <workItem from="1470555981182" duration="4233000" />
-      <workItem from="1479697436796" duration="1104000" />
-      <workItem from="1480090481930" duration="1808000" />
-      <workItem from="1489523165678" duration="2044000" />
-      <workItem from="1489530501845" duration="3609000" />
-      <workItem from="1489670432275" duration="596000" />
-      <workItem from="1489745595298" duration="1728000" />
-      <workItem from="1489782693496" duration="13000" />
-      <workItem from="1489791969938" duration="1963000" />
-      <workItem from="1489828314166" duration="1097000" />
-      <workItem from="1489877650369" duration="75000" />
-      <workItem from="1490131965169" duration="5273000" />
-      <workItem from="1490143820648" duration="2109000" />
-      <workItem from="1490219334342" duration="8521000" />
-      <workItem from="1490284473124" duration="24747000" />
-      <workItem from="1490443562798" duration="4334000" />
-      <workItem from="1490466117504" duration="5783000" />
-      <workItem from="1490471926145" duration="372000" />
-      <workItem from="1490501523331" duration="117000" />
-      <workItem from="1490501678397" duration="93000" />
-      <workItem from="1490501817462" duration="2471000" />
-      <workItem from="1495307841388" duration="2095000" />
-      <workItem from="1495310943577" duration="4345000" />
-      <workItem from="1495887279122" duration="2875000" />
-      <workItem from="1496141976218" duration="6000" />
-      <workItem from="1498007435861" duration="58000" />
-      <workItem from="1498094314566" duration="104000" />
-      <workItem from="1498097023881" duration="111000" />
-      <workItem from="1498226889871" duration="253000" />
-      <workItem from="1499375698639" duration="438000" />
-      <workItem from="1499511910075" duration="143000" />
-      <workItem from="1499723373886" duration="189000" />
-      <workItem from="1499909370031" duration="86000" />
-      <workItem from="1500062115924" duration="248000" />
-      <workItem from="1500149564299" duration="1542000" />
-      <workItem from="1500151223533" duration="773000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added Session Handler to the project">
-      <created>1500149708505</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1500149708505</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added Session Constants">
-      <created>1500150004788</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1500150004788</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added session start as an instance of session manager">
-      <created>1500150041701</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1500150041701</updated>
-    </task>
-    <task id="LOCAL-00004" summary="modified some bugs">
-      <created>1500151316487</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1500151316487</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added a call to index.default language file">
-      <created>1500159286645</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1500159286645</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added index language folder">
-      <created>1500159316420</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1500159316420</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94560000" />
+    <option name="totallyTimeSpent" value="3000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -448,29 +153,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Session Handler to the project" />
-    <MESSAGE value="Added Session Constants" />
-    <MESSAGE value="Added session start as an instance of session manager" />
-    <MESSAGE value="modified some bugs" />
-    <MESSAGE value="Added a call to index.default language file" />
-    <MESSAGE value="Added index language folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added index language folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
