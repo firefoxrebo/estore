@@ -1,6 +1,10 @@
 <header class="main">
     <a href="javascript:;" data-menu-status="<?= (isset($_COOKIE['menu_opened']) && $_COOKIE['menu_opened'] == 'true') ? 'true' : 'false' ?>" class="menu_switch <?= (isset($_COOKIE['menu_opened']) && $_COOKIE['menu_opened'] == 'true') ? 'opened no_animation' : '' ?>"><i class="fa fa-bars"></i></a>
-    <h1><?= $text_dashboard ?> <?= ' > ' . @$title ?></h1>
+    <h1><?= $text_dashboard ?>
+        <?php if (isset($title)): ?>
+            <?= ' > ' . $title ?>
+        <?php endif; ?>
+    </h1>
     <div class="user_menu_container">
         <a href="javascript:;" class="language_switch user">
             <span><?= $text_welcome ?> محمد</span>
