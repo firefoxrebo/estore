@@ -1,9 +1,11 @@
 <?php
-namespace PHPMVC\LIB;
+namespace PHPMVC\LIB\Template;
 
 
 class Template
 {
+    use TemplateHelper;
+
     private $_templateParts;
     private $_action_view;
     private $_data;

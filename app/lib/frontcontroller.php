@@ -1,5 +1,6 @@
 <?php
 namespace PHPMVC\LIB;
+use PHPMVC\LIB\Template\Template;
 
 class FrontController
 {
@@ -39,6 +40,7 @@ class FrontController
     {
         $controllerClassName = 'PHPMVC\Controllers\\' . ucfirst($this->_controller) . 'Controller';
         $actionName = $this->_action . 'Action';
+
         if(!class_exists($controllerClassName) || !method_exists($controllerClassName, $actionName)) {
             $controllerClassName = self::NOT_FOUND_CONTROLLER;
             $this->_action = $actionName = self::NOT_FOUND_ACTION;
