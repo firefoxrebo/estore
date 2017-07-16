@@ -6,7 +6,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/usermodel.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/default.view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/abstractcontroller.php" afterPath="$PROJECT_DIR$/app/controllers/abstractcontroller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notfoundcontroller.php" afterPath="$PROJECT_DIR$/app/controllers/notfoundcontroller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/nav.php" afterPath="$PROJECT_DIR$/app/template/nav.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notfound/notfound.view.php" afterPath="$PROJECT_DIR$/app/views/notfound/notfound.view.php" />
@@ -485,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500163452105</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Reimplemented the view method">
+      <created>1500163492405</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1500163492405</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3816000" />
+    <option name="totallyTimeSpent" value="3854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -548,7 +554,8 @@
     <MESSAGE value="Added support for Sessin Manager Class" />
     <MESSAGE value="Changed the database name to storedb" />
     <MESSAGE value="Added new users language folder and added new language keys to template.common" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new users language folder and added new language keys to template.common" />
+    <MESSAGE value="Reimplemented the view method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reimplemented the view method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
