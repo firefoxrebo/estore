@@ -60,3 +60,13 @@ $('a.language_switch.user').click(function(evt)
     evt.preventDefault();
     $('ul.user_menu').toggle();
 })
+
+$('li.submenu > a').click(function()
+{
+    $(this).next().slideToggle();
+    if($(this).parent().hasClass('selected')) {
+        $(this).parent().removeClass('selected')
+    } else {
+        $(this).parent().addClass('selected')
+    }
+});

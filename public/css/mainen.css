@@ -350,10 +350,13 @@ div.wrapper nav.main_navigation ul.app_navigation li a:visited {
 }
 
 div.wrapper nav.main_navigation ul.app_navigation li a:hover,
-div.wrapper nav.main_navigation ul.app_navigation li a:active {
+div.wrapper nav.main_navigation ul.app_navigation li a:active,
+div.wrapper nav.main_navigation ul.app_navigation li a.selected,
+div.wrapper nav.main_navigation ul.app_navigation li.submenu.selected > a {
     background: #222;
     color: #b8c7ce;
     border-left: solid 5px #408eba;
+    border-bottom: solid 1px transparent;
 }
 
 div.wrapper nav.main_navigation ul.app_navigation li a > i {
@@ -363,6 +366,39 @@ div.wrapper nav.main_navigation ul.app_navigation li a > i {
     height: 20px;
     margin-right: 10px;
     font-size: 1.2em !important;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li.submenu ul {
+    background-color: #222;
+    padding: 10px 0;
+    border-left: solid 5px transparent;
+    display: none;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li.submenu:hover ul,
+div.wrapper nav.main_navigation ul.app_navigation li.submenu.selected ul {
+    border-left: solid 5px #408eba;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li.submenu.selected ul {
+    display: block;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li.submenu ul li a:link,
+div.wrapper nav.main_navigation ul.app_navigation li.submenu ul li a:visited {
+    background-color: transparent;
+    border: none;
+    font-size: 0.85em;
+    padding: 0px 0px 0px 45px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+div.wrapper nav.main_navigation ul.app_navigation li.submenu ul li a:hover,
+div.wrapper nav.main_navigation ul.app_navigation li.submenu ul li a:active,
+div.wrapper nav.main_navigation ul.app_navigation li.submenu ul li a.selected {
+    color: #408eba;
+    text-decoration: none;
 }
 
 div.wrapper div.action_view {
