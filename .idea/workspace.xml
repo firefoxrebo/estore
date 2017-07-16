@@ -8,7 +8,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/usermodel.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/default.view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.php" afterPath="$PROJECT_DIR$/app/config/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/abstractcontroller.php" afterPath="$PROJECT_DIR$/app/controllers/abstractcontroller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notfoundcontroller.php" afterPath="$PROJECT_DIR$/app/controllers/notfoundcontroller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/ar/template/common.lang.php" afterPath="$PROJECT_DIR$/app/languages/ar/template/common.lang.php" />
@@ -476,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500163349733</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed the database name to storedb">
+      <created>1500163380664</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1500163380664</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3715000" />
+    <option name="totallyTimeSpent" value="3743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -537,7 +543,8 @@
     <MESSAGE value="Fixing Bugs" />
     <MESSAGE value="New styles" />
     <MESSAGE value="Added support for Sessin Manager Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for Sessin Manager Class" />
+    <MESSAGE value="Changed the database name to storedb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the database name to storedb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
