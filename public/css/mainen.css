@@ -352,6 +352,7 @@ div.wrapper nav.main_navigation ul.app_navigation li a:visited {
 div.wrapper nav.main_navigation ul.app_navigation li a:hover,
 div.wrapper nav.main_navigation ul.app_navigation li a:active,
 div.wrapper nav.main_navigation ul.app_navigation li a.selected,
+div.wrapper nav.main_navigation ul.app_navigation li.selected > a,
 div.wrapper nav.main_navigation ul.app_navigation li.submenu.selected > a {
     background: #222;
     color: #b8c7ce;
