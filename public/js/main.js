@@ -63,6 +63,8 @@ $('a.language_switch.user').click(function(evt)
 
 $('li.submenu > a').click(function()
 {
+    $('li.submenu > ul').not($(this).next()).slideUp();
+    $('li.submenu').not($(this).parent()).removeClass('selected')
     $(this).next().slideToggle();
     if($(this).parent().hasClass('selected')) {
         $(this).parent().removeClass('selected')
