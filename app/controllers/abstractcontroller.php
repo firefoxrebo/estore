@@ -47,19 +47,13 @@ class AbstractController
 
     protected function _view()
     {
-        if($this->_action == FrontController::NOT_FOUND_ACTION) {
-            require_once VIEWS_PATH . 'notfound' . DS . 'notfound.view.php';
-        } else {
-            $view = VIEWS_PATH . $this->_controller . DS . $this->_action . '.view.php';
-            if(file_exists($view)) {
-                $this->_data = array_merge($this->_data, $this->_language->getDictionary());
-                $this->_template->setActionViewFile($view);
-                $this->_template->setAppData($this->_data);
-                $this->_template->renderApp();
-            } else {
-                require_once VIEWS_PATH . 'notfound' . DS . 'noview.view.php';
-            }
+        $view = VIEWS_PATH . $this->_controller . DS . $this->_action . '.view.php';
+        if($this->_action == FrontController::NOT_FOUND_ACTION || !file_exists($view)) {
+            $view = VIEWS_PATH . 'notfound' . DS . 'notfound.view.php';
         }
-
+        $this->_data = array_merge($this->_data, $this->_language->getDictionary());
+        $this->_template->setActionViewFile($view);
+        $this->_template->setAppData($this->_data);
+        $this->_template->renderApp();
     }
 }
