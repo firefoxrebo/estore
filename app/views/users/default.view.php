@@ -1,4 +1,3 @@
-<h1><?= $text_header ?></h1>
 <div class="container">
     <a href="/users/create" class="button"><i class="fa fa-plus"></i> <?= $text_new_item ?></a>
     <table class="data">
