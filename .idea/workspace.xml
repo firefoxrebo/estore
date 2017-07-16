@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b49fe11d-e0bd-4ad7-a3c0-1ca52c9fac04" name="Default" comment="Added not found action">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/ar/users/default.lang.php" afterPath="$PROJECT_DIR$/app/languages/ar/users/default.lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en/users/default.lang.php" afterPath="$PROJECT_DIR$/app/languages/en/users/default.lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/default.view.php" afterPath="$PROJECT_DIR$/app/views/users/default.view.php" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -405,11 +403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500164290656</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="modified the users.default language file">
+      <created>1500164317432</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1500164317432</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4617000" />
+    <option name="totallyTimeSpent" value="4643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -470,7 +475,8 @@
     <MESSAGE value="Reimplemented the view method" />
     <MESSAGE value="Added not found action" />
     <MESSAGE value="Modified the default action to get the current users in the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified the default action to get the current users in the database" />
+    <MESSAGE value="modified the users.default language file" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified the users.default language file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
