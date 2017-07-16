@@ -15,7 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/languages/en/template/common.lang.php" afterPath="$PROJECT_DIR$/app/languages/en/template/common.lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/nav.php" afterPath="$PROJECT_DIR$/app/template/nav.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notfound/notfound.view.php" afterPath="$PROJECT_DIR$/app/views/notfound/notfound.view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -470,11 +469,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500163318143</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added support for Sessin Manager Class">
+      <created>1500163349733</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1500163349733</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3681000" />
+    <option name="totallyTimeSpent" value="3715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -530,7 +536,8 @@
     <MESSAGE value="Added sessoion configuration" />
     <MESSAGE value="Fixing Bugs" />
     <MESSAGE value="New styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="New styles" />
+    <MESSAGE value="Added support for Sessin Manager Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added support for Sessin Manager Class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
