@@ -379,14 +379,6 @@ div.wrapper div.action_view.collapsed.no_animation {
     transition: none !important;
 }
 
-div.wrapper div.action_view h1 {
-    font-size: 1em;
-    background-color: #408eba;
-    padding: 10px;
-    color: #FFF;
-    display: inline-block;
-}
-
 div.wrapper div.action_view form.appForm {
     width: 100%;
     margin: 0 auto;
