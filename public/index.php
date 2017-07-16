@@ -4,7 +4,7 @@ namespace PHPMVC;
 use PHPMVC\LIB\FrontController;
 use PHPMVC\LIB\Language;
 use PHPMVC\LIB\SessionManager;
-use PHPMVC\LIB\Template;
+use PHPMVC\LIB\Template\Template;
 
 if(!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
