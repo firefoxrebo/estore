@@ -355,6 +355,15 @@ div.wrapper nav.main_navigation ul.app_navigation li a:active {
     border-left: solid 5px #408eba;
 }
 
+div.wrapper nav.main_navigation ul.app_navigation li a > i {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 1.2em !important;
+}
+
 div.wrapper div.action_view {
     padding: 20px;
     background: #FFF;
@@ -368,6 +377,14 @@ div.wrapper div.action_view.collapsed {
 
 div.wrapper div.action_view.collapsed.no_animation {
     transition: none !important;
+}
+
+div.wrapper div.action_view h1 {
+    font-size: 1em;
+    background-color: #408eba;
+    padding: 10px;
+    color: #FFF;
+    display: inline-block;
 }
 
 div.wrapper div.action_view form.appForm {
