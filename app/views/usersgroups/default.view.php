@@ -10,9 +10,10 @@
         <tbody>
         <?php if(false !== $groups): foreach ($groups as $group): ?>
             <tr>
-                <td><?= $user->GroupName ?></td>
+                <td><?= $group->GroupName ?></td>
                 <td>
-
+                    <a href="/usersgroups/edit/<?= $group->GroupId ?>"><i class="fa fa-edit"></i></a>
+                    <a href="/usersgroups/delete/<?= $group->GroupId ?>" onclick="if(!confirm('<?= $text_table_control_delete_confirm ?>')) return false;"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         <?php endforeach; endif; ?>
