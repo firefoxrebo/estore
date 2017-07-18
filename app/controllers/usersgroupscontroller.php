@@ -14,8 +14,8 @@ class UsersGroupsController extends AbstractController
 
     public function defaultAction()
     {
-        $this->_language->load('template.common');
-        $this->_language->load('usersgroups.default');
+        $this->language->load('template.common');
+        $this->language->load('usersgroups.default');
 
         $this->_data['groups'] = UserGroupModel::getAll();
 
@@ -24,9 +24,9 @@ class UsersGroupsController extends AbstractController
 
     public function createAction()
     {
-        $this->_language->load('template.common');
-        $this->_language->load('usersgroups.create');
-        $this->_language->load('usersgroups.labels');
+        $this->language->load('template.common');
+        $this->language->load('usersgroups.create');
+        $this->language->load('usersgroups.labels');
 
         $this->_data['privileges'] = PrivilegeModel::getAll();
 
@@ -60,9 +60,9 @@ class UsersGroupsController extends AbstractController
             $this->redirect('/usersgroups');
         }
 
-        $this->_language->load('template.common');
-        $this->_language->load('usersgroups.edit');
-        $this->_language->load('usersgroups.labels');
+        $this->language->load('template.common');
+        $this->language->load('usersgroups.edit');
+        $this->language->load('usersgroups.labels');
 
         $this->_data['group'] = $group;
         $this->_data['privileges'] = PrivilegeModel::getAll();

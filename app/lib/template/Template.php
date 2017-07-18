@@ -9,6 +9,12 @@ class Template
     private $_templateParts;
     private $_action_view;
     private $_data;
+    private $_registry;
+
+    public function __get($key)
+    {
+        return $this->_registry->$key;
+    }
 
     public function __construct(array $parts)
     {
@@ -23,6 +29,11 @@ class Template
     public function setAppData($data)
     {
         $this->_data = $data;
+    }
+
+    public function setRegistry($registry)
+    {
+        $this->_registry = $registry;
     }
 
     private function renderTemplateHeaderStart()
