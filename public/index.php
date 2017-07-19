@@ -1,7 +1,8 @@
 <?php
 namespace PHPMVC;
 
-use PHPMVC\languages\Registry;
+use PHPMVC\lib\Messenger;
+use PHPMVC\Lib\Registry;
 use PHPMVC\LIB\FrontController;
 use PHPMVC\LIB\Language;
 use PHPMVC\LIB\SessionManager;
@@ -27,9 +28,12 @@ $template = new Template($template_parts);
 
 $language = new Language();
 
+$messenger = Messenger::getInstance($session);
+
 $registry = Registry::getInstance();
 $registry->session = $session;
 $registry->language = $language;
+$registry->messenger = $messenger;
 
 $frontController = new FrontController($template, $registry);
 $frontController->dispatch();

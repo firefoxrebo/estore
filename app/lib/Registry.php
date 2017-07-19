@@ -1,5 +1,5 @@
 <?php
-namespace PHPMVC\languages;
+namespace PHPMVC\Lib;
 
 class Registry
 {

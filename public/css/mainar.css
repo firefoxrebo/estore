@@ -763,12 +763,28 @@ div.wrapper div.action_view form.appForm div.input_wrapper input:focus {
 
 p.message {
     font-size: 0.95em;
-    background: #68ab68;
+    background-color: #222;
     color: #FFF;
     padding: 5px 10px;
     line-height: 1.5;
     margin: 0 0 10px 0;
     border-radius: 3px;
+}
+
+p.message.t1 {
+    background-color: #68ab68;
+}
+
+p.message.t2 {
+    background-color: #900;
+}
+
+p.message.t3 {
+    background-color: #e2b072;
+}
+
+p.message.t4 {
+    background-color: #408eba;
 }
 
 a.button:link, a.button:visited {

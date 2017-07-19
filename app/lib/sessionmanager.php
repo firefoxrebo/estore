@@ -67,6 +67,11 @@ class SessionManager extends \SessionHandler
         return isset($_SESSION[$key]) ? true : false;
     }
 
+    public function __unset($key)
+    {
+        unset($_SESSION[$key]);
+    }
+
     public function read($id)
     {
         return openssl_decrypt(parent::read($id), $this->sessionCipherAlgo, $this->sessionCipherKey);

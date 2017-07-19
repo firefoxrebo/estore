@@ -1,6 +1,6 @@
 <?php
 namespace PHPMVC\LIB;
-use PHPMVC\languages\Registry;
+use PHPMVC\Lib\Registry;
 use PHPMVC\LIB\Template\Template;
 
 class FrontController

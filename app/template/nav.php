@@ -45,6 +45,6 @@
     </ul>
 </nav>
 <div class="action_view <?= (isset($_COOKIE['menu_opened']) && $_COOKIE['menu_opened'] == 'true') ? 'collapsed no_animation' : '' ?>">
-<?php if(isset($_SESSION['message'])) { ?>
-<p class="message <?= isset($error) ? 'error' : '' ?>"><?= $_SESSION['message'] ?></p>
-<?php unset($_SESSION['message']); } ?>
+<?php $messages = $this->messenger->getMessages(); if(!empty($messages)): foreach ($messages as $message): ?>
+<p class="message t<?= $message[1] ?>"><?= $message[0] ?></p>
+<?php endforeach;endif; ?>
