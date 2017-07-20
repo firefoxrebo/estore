@@ -11,6 +11,11 @@ class PrivilegesController extends AbstractController
     use InputFilter;
     use Helper;
 
+    private $_createActionRoles =
+    [
+
+    ];
+
     public function defaultAction()
     {
         $this->language->load('template.common');

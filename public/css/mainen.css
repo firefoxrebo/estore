@@ -806,7 +806,7 @@ table.data tr:hover td:nth-child(odd),
 table.data tr:hover td.odd,
 table.data tr:hover td {
     background: rgba(64, 142, 186, 0.18) !important;
-    color: #FFF !important;
+    /*color: #FFF !important;*/
 }
 
 table.data tr:hover td a:link,

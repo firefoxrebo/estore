@@ -10,8 +10,7 @@ class AbstractModel
     const DATA_TYPE_DECIMAL = 4;
     const DATA_TYPE_DATE = 5;
 
-    // VALID DATE RANGE IS 1000-01-01 TO 9999-12-31
-    const VALIDATE_DATE_STRING = '/^[1-9][1-9][1-9][1-9]-[0-1]?[0-2]-(?:[0-2]?[1-9]|[3][0-1])$/';
+    const VALIDATE_DATE_STRING = '/^[1-2][0-9][0-9][0-9]-(?:(?:0[1-9])|(?:1[0-2]))-(?:(?:0[1-9])|(?:(?:1|2)[0-9])|(?:3[0-1]))$/';
 
     // TODO:: Check the valid dates in MYSQL to create a proper pattern
     const VALIDATE_DATE_NUMERIC = '^\d{6,8}$';
