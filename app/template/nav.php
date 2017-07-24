@@ -46,5 +46,5 @@
 </nav>
 <div class="action_view <?= (isset($_COOKIE['menu_opened']) && $_COOKIE['menu_opened'] == 'true') ? 'collapsed no_animation' : '' ?>">
 <?php $messages = $this->messenger->getMessages(); if(!empty($messages)): foreach ($messages as $message): ?>
-<p class="message t<?= $message[1] ?>"><?= $message[0] ?></p>
+<p class="message t<?= $message[1] ?>"><?= $message[0] ?><a href="" class="closeBtn"><i class="fa fa-times"></i></a></p>
 <?php endforeach;endif; ?>

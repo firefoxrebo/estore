@@ -45,10 +45,21 @@ $('div.radio_button, div.checkbox_button, label.radio span, label.checkbox span,
      evt.stopPropagation();
 });
 
-setTimeout(function()
+// setTimeout(function()
+// {
+//     $('p.message').fadeOut();
+// }, 5000);
+
+(function()
 {
-    $('p.message').fadeOut();
-}, 5000);
+    var closeMessageButtons = document.querySelectorAll('p.message a.closeBtn');
+    for ( var i = 0, ii = closeMessageButtons.length; i < ii; i++ ) {
+        closeMessageButtons[i].addEventListener('click', function (evt) {
+            evt.preventDefault();
+            this.parentNode.parentNode.removeChild(this.parentNode);
+        }, false);
+    }
+})();
 
 $(document).click(function()
 {
