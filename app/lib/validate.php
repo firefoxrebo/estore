@@ -45,6 +45,16 @@ trait Validate
         return (bool) preg_match($this->_regexPatterns['alphanum'], $value);
     }
 
+    public function eq($value, $matchAgainst)
+    {
+        return $value == $matchAgainst;
+    }
+
+    public function eq_field($value, $otherFieldValue)
+    {
+        return $value == $otherFieldValue;
+    }
+
     public function lt($value, $matchAgainst)
     {
         if(is_string($value)) {
@@ -173,6 +183,23 @@ trait Validate
                             );
                             $errors[$fieldName] = true;
                         }
+                    } elseif(preg_match_all('/(eq)\((\w+)\)/', $validationRole, $m)) {
+                        if($this->eq($value, $m[2][0]) === false) {
+                            $this->messenger->add(
+                                $this->language->feedKey('text_error_'.$m[1][0], [$this->language->get('text_label_'.$fieldName), $m[2][0]]),
+                                Messenger::APP_MESSAGE_ERROR
+                            );
+                            $errors[$fieldName] = true;
+                        }
+                    } elseif(preg_match_all('/(eq_field)\((\w+)\)/', $validationRole, $m)) {
+                        $otherFieldValue = $inputType[$m[2][0]];
+                        if($this->eq_field($value, $otherFieldValue) === false) {
+                            $this->messenger->add(
+                                $this->language->feedKey('text_error_'.$m[1][0], [$this->language->get('text_label_'.$fieldName), $this->language->get('text_label_'.$m[2][0])]),
+                                Messenger::APP_MESSAGE_ERROR
+                            );
+                            $errors[$fieldName] = true;
+                        }
                     } else {
                         if($this->$validationRole($value) === false) {
                             $this->messenger->add(
@@ -189,4 +216,3 @@ trait Validate
     }
 
 }
-

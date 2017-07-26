@@ -8,8 +8,6 @@ class TestController extends AbstractController
     use Validate;
     public function defaultAction()
     {
-        $str = 'الحقل %s يجب ان يحتوي على قيمة';
-        $newString = sprintf($str, 'اسم المستخدم');
-        echo $newString;
+        echo password_hash('encryptedkey', CRYPT_BLOWFISH);
     }
 }
