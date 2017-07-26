@@ -761,6 +761,26 @@ div.wrapper div.action_view form.appForm div.input_wrapper input:focus {
     border-bottom: solid 2px #408eba;
 }
 
+div.wrapper div.action_view form.appForm div.input_wrapper > i {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    text-align: center;
+    width: 20px;
+    height: 18px;
+    color: #FFF;
+    border-radius: 20px;
+    padding-top: 2px;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper > i.error {
+    background: #900;
+}
+
+div.wrapper div.action_view form.appForm div.input_wrapper > i.success {
+    background: darkgreen;
+}
+
 p.message {
     font-size: 0.95em;
     background-color: #222;
