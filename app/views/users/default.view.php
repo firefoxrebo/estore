@@ -20,7 +20,8 @@
                 <td><?= $user->SubscriptionDate ?></td>
                 <td><?= $user->LastLogin ?></td>
                 <td>
-
+                    <a href="/users/edit/<?= $user->UserId ?>"><i class="fa fa-edit"></i></a>
+                    <a href="/users/delete/<?= $user->UserId ?>" onclick="if(!confirm('<?= $text_table_control_delete_confirm ?>')) return false;"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         <?php endforeach; endif; ?>
