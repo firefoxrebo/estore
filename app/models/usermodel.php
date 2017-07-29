@@ -13,6 +13,12 @@ class UserModel extends AbstractModel
     public $GroupId;
     public $Status;
 
+    /**
+     * @var UserProfileModel
+     */
+    public $profile;
+    public $privileges;
+
     protected static $tableName = 'app_users';
 
     protected static $tableSchema = array(
@@ -31,15 +37,14 @@ class UserModel extends AbstractModel
 
     public function cryptPassword($password)
     {
-        $salt = '$2a$07$yeNCSNwRpYopOhv0TrrReP$';
-        $this->Password = crypt($password, $salt);
+        $this->Password = crypt($password, APP_SALT);
     }
 
     // TODO:: FIX THE TABLE ALIASING
-    public static function getAll()
+    public static function getUsers(UserModel $user)
     {
         return self::get(
-        'SELECT au.*, aug.GroupName GroupName FROM ' . self::$tableName . ' au INNER JOIN app_users_groups aug ON aug.GroupId = au.GroupId'
+        'SELECT au.*, aug.GroupName GroupName FROM ' . self::$tableName . ' au INNER JOIN app_users_groups aug ON aug.GroupId = au.GroupId WHERE au.UserId != ' . $user->UserId
         );
     }
 
@@ -48,5 +53,24 @@ class UserModel extends AbstractModel
         return self::get('
             SELECT * FROM ' . self::$tableName . ' WHERE Username = "' . $username . '"
         ');
+    }
+
+    public static function authenticate ($username, $password, $session)
+    {
+        $password = crypt($password, APP_SALT) ;
+        $sql = 'SELECT *, (SELECT GroupName FROM app_users_groups WHERE app_users_groups.GroupId = ' . self::$tableName . '.GroupId) GroupName FROM ' . self::$tableName . ' WHERE Username = "' . $username . '" AND Password = "' .  $password . '"';
+        $foundUser = self::getOne($sql);
+        if(false !== $foundUser) {
+            if($foundUser->Status == 2) {
+                return 2;
+            }
+            $foundUser->LastLogin = date('Y-m-d H:i:s');
+            $foundUser->save();
+            $foundUser->profile = UserProfileModel::getByPK($foundUser->UserId);
+            $foundUser->privileges = UserGroupPrivilegeModel::getPrivilegesForGroup($foundUser->GroupId);
+            $session->u = $foundUser;
+            return 1;
+        }
+        return false;
     }
 }
