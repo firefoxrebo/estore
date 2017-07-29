@@ -31,6 +31,12 @@ class Template
         $this->_data = $data;
     }
 
+    // TODO: implement a better solution
+    public function swapTemplate($template)
+    {
+        $this->_templateParts['template'] = $template;
+    }
+
     public function setRegistry($registry)
     {
         $this->_registry = $registry;
