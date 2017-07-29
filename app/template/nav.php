@@ -3,8 +3,8 @@
         <div class="profile_picture">
             <img src="/img/user.png" alt="User Profile Picture">
         </div>
-        <span class="name">محمد يحيى</span>
-        <span class="privilege"><?= $text_app_manager ?></span>
+        <span class="name"><?= $this->session->u->profile->FirstName ?> <?= $this->session->u->profile->LastName ?></span>
+        <span class="privilege"><?= $this->session->u->GroupName ?></span>
     </div>
     <ul class="app_navigation">
         <li class="<?= $this->matchUrl('/') === true ? ' selected' : '' ?>"><a href="/"><i class="fa fa-dashboard"></i> <?= $text_general_statistics ?></a></li>
