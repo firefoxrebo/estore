@@ -1,6 +1,7 @@
 <?php
 namespace PHPMVC;
 
+use PHPMVC\lib\Authentication;
 use PHPMVC\lib\Messenger;
 use PHPMVC\Lib\Registry;
 use PHPMVC\LIB\FrontController;
@@ -30,10 +31,12 @@ $language = new Language();
 
 $messenger = Messenger::getInstance($session);
 
+$authentication = Authentication::getInstance($session);
+
 $registry = Registry::getInstance();
 $registry->session = $session;
 $registry->language = $language;
 $registry->messenger = $messenger;
 
-$frontController = new FrontController($template, $registry);
+$frontController = new FrontController($template, $registry, $authentication);
 $frontController->dispatch();
