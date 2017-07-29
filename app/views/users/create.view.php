@@ -1,15 +1,23 @@
 <form autocomplete="off" class="appForm clearfix" method="post" enctype="application/x-www-form-urlencoded">
     <fieldset>
         <legend><?= $text_legend ?></legend>
-        <div class="input_wrapper n40 border">
+        <div class="input_wrapper n20 border">
+            <label<?= $this->labelFloat('FirstName') ?>><?= $text_label_FirstName ?></label>
+            <input required type="text" name="FirstName" maxlength="10" value="<?= $this->showValue('FirstName') ?>">
+        </div>
+        <div class="input_wrapper n20 border padding">
+            <label<?= $this->labelFloat('LastName') ?>><?= $text_label_LastName ?></label>
+            <input required type="text" name="LastName" maxlength="10" value="<?= $this->showValue('LastName') ?>">
+        </div>
+        <div class="input_wrapper n20 padding border">
             <label<?= $this->labelFloat('Username') ?>><?= $text_label_Username ?></label>
             <input required type="text" name="Username" maxlength="30" value="<?= $this->showValue('Username') ?>">
         </div>
-        <div class="input_wrapper n30 border padding">
+        <div class="input_wrapper n20 border padding">
             <label<?= $this->labelFloat('Password') ?>><?= $text_label_Password ?></label>
             <input required type="password" name="Password" value="<?= $this->showValue('Password') ?>">
         </div>
-        <div class="input_wrapper n30 padding">
+        <div class="input_wrapper n20 padding">
             <label<?= $this->labelFloat('CPassword') ?>><?= $text_label_CPassword ?></label>
             <input required type="password" name="CPassword" value="<?= $this->showValue('CPassword') ?>">
         </div>
