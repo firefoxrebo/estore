@@ -26,3 +26,4 @@ $_['text_account_settings'] = 'Account settings';
 $_['text_log_out'] = 'Logout';
 $_['text_welcome'] = 'Welcome';
 $_['text_not_found'] = 'Page not found';
+$_['text_access_denied'] = 'Sorry, you don\'t have sufficient privileges to access this page';

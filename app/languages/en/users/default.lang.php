@@ -9,3 +9,4 @@ $_['text_table_email'] = 'Email';
 $_['text_table_subscription_date'] = 'Subscription Date';
 $_['text_table_last_login'] = 'Last Logged In';
 $_['text_table_control'] = 'Control';
+$_['text_table_control_delete_confirm'] = 'Would you like to delete the user from the database?';

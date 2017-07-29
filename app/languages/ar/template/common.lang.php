@@ -27,3 +27,4 @@ $_['text_account_settings'] = 'إعدادات الحساب';
 $_['text_log_out'] = 'تسجيل الخروج';
 $_['text_welcome'] = 'مرحبا';
 $_['text_not_found'] = 'صفحة غير موجودة';
+$_['text_access_denied'] = 'عفوا انت لا تمتلك صلاحيات الدخول لهذه الصفحة';
