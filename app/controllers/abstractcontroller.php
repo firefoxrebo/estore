@@ -13,6 +13,9 @@ class AbstractController
     protected $_controller;
     protected $_action;
     protected $_params;
+    /**
+     * @var Template\Template
+     */
     protected $_template;
     protected $_registry;
 
