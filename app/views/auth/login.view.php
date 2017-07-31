@@ -2,7 +2,7 @@
     <?php $messages = $this->messenger->getMessages(); if(!empty($messages)): foreach ($messages as $message): ?>
         <p class="message t<?= $message[1] ?>"><?= $message[0] ?><a href="" class="closeBtn"><i class="fa fa-times"></i></a></p>
     <?php endforeach;endif; ?>
-    <div class="login_box">
+    <div class="login_box animate">
         <form autocomplete="off" method="post" enctype="application/x-www-form-urlencoded">
             <div class="border"></div>
             <h1><?= $login_header ?></h1>

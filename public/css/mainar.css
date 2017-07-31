@@ -831,14 +831,31 @@ a.button:link, a.button:visited {
 
 div.action_view.login {
     padding-top: 1px;
+    height: calc(100% - 1px);
+    backface-visibility: hidden;
+    perspective: 3000px;
+    transform: translate3d(0, 0, 0);
 }
 
 div.login_box {
     width: 300px;
-    margin: 130px auto 0 auto;
+    margin: 100px auto 0 auto;
     padding: 20px;
     background: #FFF;
     border-radius: 10px;
+    transform: scale(0);
+}
+
+@keyframes login {
+    from {transform: scale(0) rotateY(0deg)}
+    to {transform: scale(1) rotateY(360deg)}
+}
+
+/* The element to apply the animation to */
+div.login_box.animate {
+    animation-name: login;
+    animation-duration: 1.5s;
+    transform: scale(1);
 }
 
 div.login_box form img {
