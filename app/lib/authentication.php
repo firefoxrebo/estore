@@ -15,7 +15,8 @@ class Authentication
         '/users/settings',
         '/language/default',
         '/accessdenied/default',
-        '/notfound/notfound'
+        '/notfound/notfound',
+        '/test/default'
     ];
 
     private function __construct($session)
