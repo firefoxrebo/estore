@@ -18,18 +18,23 @@ class FileUpload
 
     public function __construct(array $file)
     {
-        $this->name = $this->name($file['name']);
+        $this->name = $file['name'];
         $this->type = $file['type'];
         $this->size = $file['size'];
         $this->error = $file['error'];
         $this->tmpPath = $file['tmp_name'];
+        $this->name();
     }
 
-    private function name($name)
+    private function name()
     {
-        preg_match_all('/([a-z]{1,4})$/i', $name, $m);
+        preg_match_all('/([a-z]{1,4})$/i', $this->name, $m);
         $this->fileExtension = $m[0][0];
-        return substr(strtolower(base64_encode($this->name . APP_SALT)), 0, 26);
+        $name = substr(strtolower(base64_encode($this->name . APP_SALT)), 0, 30);
+        $name = preg_replace('/(\w{6})/i', '$1_', $name);
+        $name = rtrim($name, '_');
+        $this->name = $name;
+        return $name;
     }
 
     private function isAllowedType()
@@ -60,23 +65,19 @@ class FileUpload
     public function upload()
     {
         if($this->error != 0) {
-            trigger_error('Sorry file didn\'t upload successfully', E_USER_WARNING);
+            throw new \Exception('Sorry file didn\'t upload successfully');
         } elseif(!$this->isAllowedType()) {
-            trigger_error('Sorry files of type ' . $this->fileExtension .  ' are not allowed', E_USER_WARNING);
+            throw new \Exception('Sorry files of type ' . $this->fileExtension .  ' are not allowed');
         } elseif ($this->isSizeNotAcceptable()) {
-            trigger_error('Sorry the file size exceeds the maximum allowed size', E_USER_WARNING);
+            throw new \Exception('Sorry the file size exceeds the maximum allowed size');
         } else {
-            if($this->isImage()) {
-                move_uploaded_file($this->tmpPath, IMAGES_UPLOAD_STORAGE . DS . $this->getFileName());
+            $storageFolder = $this->isImage() ? IMAGES_UPLOAD_STORAGE : DOCUMENTS_UPLOAD_STORAGE;
+            if(is_writable($storageFolder)) {
+                move_uploaded_file($this->tmpPath, $storageFolder . DS . $this->getFileName());
             } else {
-                move_uploaded_file($this->tmpPath, DOCUMENTS_UPLOAD_STORAGE . DS . $this->getFileName());
+                throw new \Exception('Sorry the destination folder is not writable');
             }
         }
         return $this;
-
     }
-
-
-
-
 }

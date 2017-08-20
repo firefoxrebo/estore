@@ -3,6 +3,8 @@ namespace PHPMVC\Controllers;
 use PHPMVC\lib\FileUpload;
 use PHPMVC\LIB\Helper;
 use PHPMVC\LIB\InputFilter;
+use PHPMVC\lib\Messenger;
+use PHPMVC\Lib\Validate;
 use PHPMVC\Models\PrivilegeModel;
 use PHPMVC\Models\ProductCategoryModel;
 use PHPMVC\Models\UserGroupModel;
@@ -13,6 +15,12 @@ class ProductCategoriesController extends AbstractController
 
     use InputFilter;
     use Helper;
+    use Validate;
+
+    private $_createActionRoles =
+    [
+        'Name'          => 'req|alphanum|between(3,30)'
+    ];
 
     public function defaultAction()
     {
@@ -29,16 +37,32 @@ class ProductCategoriesController extends AbstractController
         $this->language->load('template.common');
         $this->language->load('productcategories.create');
         $this->language->load('productcategories.labels');
+        $this->language->load('productcategories.messages');
+        $this->language->load('validation.errors');
+
+        $uploadError = false;
 
         // TODO:: explain a better solution to check against file type
         // TODO:: explain a better soution to secure the upload folder
-        if(isset($_POST['submit'])) {
+        if(isset($_POST['submit']) && $this->isValid($this->_createActionRoles, $_POST)) {
             $category = new ProductCategoryModel();
             $category->Name = $this->filterString($_POST['Name']);
-            $category->Image = (new FileUpload($_FILES['image']))->upload()->getFileName();
-            if($category->save())
+            if(!empty($_FILES['image']['name'])) {
+                $uploader = new FileUpload($_FILES['image']);
+                try {
+                    $uploader->upload();
+                    $category->Image = $uploader->getFileName();
+                } catch (\Exception $e) {
+                    $this->messenger->add($e->getMessage(), Messenger::APP_MESSAGE_ERROR);
+                    $uploadError = true;
+                }
+            }
+            if($uploadError === false && $category->save())
             {
+                $this->messenger->add($this->language->get('message_create_success'));
                 $this->redirect('/productcategories');
+            } else {
+                $this->messenger->add($this->language->get('message_create_failed'), Messenger::APP_MESSAGE_ERROR);
             }
         }
 
@@ -49,7 +73,7 @@ class ProductCategoriesController extends AbstractController
     {
 
         $id = $this->filterInt($this->_params[0]);
-        $category = UserGroupModel::getByPK($id);
+        $category = ProductCategoryModel::getByPK($id);
 
         if($category === false) {
             $this->redirect('/productcategories');
@@ -58,35 +82,36 @@ class ProductCategoriesController extends AbstractController
         $this->language->load('template.common');
         $this->language->load('productcategories.edit');
         $this->language->load('productcategories.labels');
+        $this->language->load('productcategories.messages');
+        $this->language->load('validation.errors');
 
-        $this->_data['group'] = $category;
-        $this->_data['privileges'] = PrivilegeModel::getAll();
-        $extractedPrivilegesIds = $this->_data['groupPrivileges'] = UserGroupPrivilegeModel::getGroupPrivileges($category);
+
+        $this->_data['category'] = $category;
+        $uploadError = false;
 
         if(isset($_POST['submit'])) {
-            $category->GroupName = $this->filterString($_POST['GroupName']);
-            if($category->save())
-            {
-                if(isset($_POST['privileges']) && is_array($_POST['privileges'])) {
-
-                    $privilegesIdsToBeDeleted = array_diff($extractedPrivilegesIds, $_POST['privileges']);
-                    $privilegesIdsToBeAdded = array_diff($_POST['privileges'], $extractedPrivilegesIds);
-                    
-                    // Delete the unwanted privileges
-                    foreach ($privilegesIdsToBeDeleted as $deletedPrivilege) {
-                        $unwantedPrivilege = UserGroupPrivilegeModel::getBy(['PrivilegeId' => $deletedPrivilege, 'GroupId' => $category->GroupId]);
-                        $unwantedPrivilege->current()->delete();
-                    }
-
-                    // Add the new privileges
-                    foreach ($privilegesIdsToBeAdded as $privilegeId) {
-                        $categoryPrivilege = new UserGroupPrivilegeModel();
-                        $categoryPrivilege->GroupId = $category->GroupId;
-                        $categoryPrivilege->PrivilegeId = $privilegeId;
-                        $categoryPrivilege->save();
-                    }
+            $category->Name = $this->filterString($_POST['Name']);
+            if(!empty($_FILES['image']['name'])) {
+                // Remove the old image
+                if($category->Image !== '' && file_exists(IMAGES_UPLOAD_STORAGE.DS.$category->Image) && is_writable(IMAGES_UPLOAD_STORAGE)) {
+                    unlink(IMAGES_UPLOAD_STORAGE.DS.$category->Image);
                 }
+                // Create a new image
+                $uploader = new FileUpload($_FILES['image']);
+                try {
+                    $uploader->upload();
+                    $category->Image = $uploader->getFileName();
+                } catch (\Exception $e) {
+                    $this->messenger->add($e->getMessage(), Messenger::APP_MESSAGE_ERROR);
+                    $uploadError = true;
+                }
+            }
+            if($uploadError === false && $category->save())
+            {
+                $this->messenger->add($this->language->get('message_create_success'));
                 $this->redirect('/productcategories');
+            } else {
+                $this->messenger->add($this->language->get('message_create_failed'), Messenger::APP_MESSAGE_ERROR);
             }
         }
 
@@ -97,22 +122,24 @@ class ProductCategoriesController extends AbstractController
     {
 
         $id = $this->filterInt($this->_params[0]);
-        $category = UserGroupModel::getByPK($id);
+        $category = ProductCategoryModel::getByPK($id);
 
         if($category === false) {
             $this->redirect('/productcategories');
         }
 
-        $categoryPrivileges = UserGroupPrivilegeModel::getBy(['GroupId' => $category->GroupId]);
+        $this->language->load('productcategories.messages');
 
-        if(false !== $categoryPrivileges) {
-            foreach ($categoryPrivileges as $categoryPrivilege) {
-                $categoryPrivilege->delete();
+        if($category->delete())
+        {
+            // Remove the old image
+            if($category->Image !== '' && file_exists(IMAGES_UPLOAD_STORAGE.DS.$category->Image)) {
+                unlink(IMAGES_UPLOAD_STORAGE.DS.$category->Image);
             }
+            $this->messenger->add($this->language->get('message_delete_success'));
+        } else {
+            $this->messenger->add($this->language->get('message_delete_failed'));
         }
-
-        if($category->delete()) {
-            $this->redirect('/productcategories');
-        }
+        $this->redirect('/productcategories');
     }
 }
